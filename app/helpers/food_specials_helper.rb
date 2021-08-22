@@ -1,0 +1,2 @@
+module FoodSpecialsHelper
+end

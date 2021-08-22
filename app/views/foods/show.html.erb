@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong><br/>
+  <%= @food.name %>
+</p>
+
+<p>
+  <strong>Hours:</strong>
+  <br/>
+  <%@food.hours.split(/[,]/).each do |hour|%>
+    <%= hour %><br/>
+  <%end%>
+</p>
+
+<% if @specials %>
+<p>
+  <strong>Specials:</strong><br/>
+  
+    <%@specials.each do |special|%>
+      <% special.info.split(/[;]/).each do |s| %>
+        <%= s %><br/>
+      <% end %>
+    <%end%>
+</p>
+<%end%>
+
+<p>
+  <strong>Website:</strong><br/>
+  <%= @food.website %>
+</p>
+
+<%= link_to 'Edit', edit_food_path(@food) %> |
+<%= link_to 'Back', foods_path %>

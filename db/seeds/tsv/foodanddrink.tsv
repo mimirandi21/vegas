@@ -1,4 +1,4 @@
-Name	Hours	Website
+name	hours	website
 Wicked Spoon	breakfast: M-F 8a-11a, lunch: 11a-3p, brunch: SS 9a-4p	https://www.cosmopolitanlasvegas.com/restaurants/wicked-spoon
 Bacchanal Buffet	daily: 4pm-10p	https://www.caesars.com/caesars-palace/restaurants/bacchanal-buffet
 Gordon Ramsays Fish and Chips	daily: 11a-10p	https://www.gordonramsayrestaurants.com/en/us/fish-and-chips/locations/las-vegas
@@ -43,7 +43,7 @@ Ocean One	Daily: 7:30a-11:30p	https://oceanonegrill.com/
 La Salsa Cantina	Sun-Thur: 8a-10p, F-Sat: 8a-11p	https://www.lasalsacantinalv.com/
 Blondies	Sun-Thur: 8a-1a, F-Sat: 8a-2a	http://www.blondieslasvegas.com/
 PBR Rockbar	M-Thur: 9a-1a, F-Sat: 8a-3a, Sun: 8a-1a	https://www.pbrrockbar.com/
-Dirt Dog	M-Thur: 10a-12a (Strip) 11:30a-12a (Downtown), F-Sun: 10a-2a (Strip) 11:30a-1:30a (Downtown)	https://www.dirtdogla.com/las-vegas
+Dirt Dog	M-Thur: 10a-12a (Strip) , M-Thur: 11:30a-12a (Downtown), F-Sun: 10a-2a (Strip), F-Sun: 11:30a-1:30a (Downtown)	https://www.dirtdogla.com/las-vegas
 Istanbul Mediterranean	M-Thur: 9a-5a, F-Sun: 9a-6a	https://www.istanbullv.com/
 Bang Bar by Momofuku	Daily: 11a-10p	https://www.cosmopolitanlasvegas.com/restaurants/bang-bar
 Haute Doggery	M-Thur: 11a-10p, F-Sat: 10a-12a, Sun: 10a-10p	https://hautedoggerylv.com
@@ -56,11 +56,11 @@ Excalibur buffet	Thurs-M: 8a-3p	https://excalibur.mgmresorts.com/en/restaurants/
 Bellagio buffet	Daily: 7a-3p	https://bellagio.mgmresorts.com/en/restaurants/the-buffet.html
 108 Drinks	M-Thur: 12p-12a, F-Sun: 12p-1a	https://thestrat.com/bars/108-drinks
 Coyote Ugly	Sun & Wed: 6p-12a, Thur-Sat: 6p-2a	https://www.coyoteuglysaloon.com/vegas/
-Bar at Times Square	Mon-Thur: 5p - 1a, Fri-Sun: 11a-2a	https://newyorknewyork.mgmresorts.com/en/nightlife/bar-at-times-square.html
+Bar at Times Square	Mon-Thur: 5p-1a, Fri-Sun: 11a-2a	https://newyorknewyork.mgmresorts.com/en/nightlife/bar-at-times-square.html
 Flights Restaurant	Daily: 9a-11p	https://www.flightsrestaurants.com/menu-las-vegas
 Burger 	Daily: 11a-11p	https://www.caesars.com/planet-hollywood/restaurants/ramsay#.YRQQTi1h2X0
 Hecho en Vegas Mexican Grill & Cantina	Tue-Thur: 11:30a-8p, Fri-Sat: 10a-9p	https://mgmgrand.mgmresorts.com/en/restaurants/hecho-en-vegas.html
-Holsteins Shakes and Buns	Mon: 11:30a-9p, Wed-Sun: 11a-10p	https://holsteinsburgers.com
+Holsteins Shakes and Buns	[Mon: 11:30a-9p, Wed-Sun: 11a-10p	https://holsteinsburgers.com
 Hussongs Cantina	Sun-Thur: 11a-11p, F-Sat: 11a-12a	https://mandalaybay.mgmresorts.com/en/restaurants/hussongs-cantina.html
 House of Blues	Daily: 7am-11pm	https://www.houseofblues.com/lasvegas
 Koi	Daily: 5p-10p	https://www.caesars.com/planet-hollywood/restaurants/koi#.YRQy6y1h2X0
@@ -68,14 +68,14 @@ Lombardi’s Romagna Mia	Mon-Thur: 11a-10p, Fri-Sat: 11a-11p	https://lombardisla
 Minus 5˚	Sun-Thur: 11a-12a, Fri-Sat: 11a-1:30a	https://www.minus5experience.com
 Mon Ami Gabi	Sun-Thur: 11a-10p, Fri-Sat: 11a-11p	https://www.monamigabi.com/las-vegas/
 Nacho Daddy	Sun-Wed: 8a-2a, Thur-Sat: 8a-3a	https://nachodaddy.com
-Napoleon’s Lounge	Thor-Mon: 2p-11p	https://www.caesars.com/paris-las-vegas/things-to-do/nightlife/napoleons-lounge?utm_campaign=GMB&utm_source=google&utm_medium=local&utm_term=NapoleonsDuelingPianos&utm_content=bar
+Napoleon’s Lounge	Thur-Mon: 2p-11p	https://www.caesars.com/paris-las-vegas/things-to-do/nightlife/napoleons-lounge?utm_campaign=GMB&utm_source=google&utm_medium=local&utm_term=NapoleonsDuelingPianos&utm_content=bar
 Noodle Shop	Daily: 11a-12a	https://mandalaybay.mgmresorts.com/en/restaurants/noodle-shop.html
-Buddy Vs Ristorante	Thur, Sun-Man: 11:30a-10p, Tue-Wed: 4:30p-10p, Fri-Sat: 11:30a-11p	https://www.venetian.com/restaurants/buddy-v-ristorante.html/
-Flour & Barley	(in restaurant) Daily: 11a-2p & 5p-10p; (walk up window) Sun-Thur: 11a-10p, Fri-Sat: 11a-11p	https://flourandbarley.com/las-vegas/
+Buddy Vs Ristorante	Sun-Mon&Thur: 11:30a-10p, Tue-Wed: 4:30p-10p, Fri-Sat: 11:30a-11p	https://www.venetian.com/restaurants/buddy-v-ristorante.html/
+Flour & Barley	(in restaurant) Daily: 11a-2p & 5p-10p, (walk up window) Sun-Thur: 11a-10p, (walk up window) Fri-Sat: 11a-11p	https://flourandbarley.com/las-vegas/
 PKWY Tavern	daily: 24hrs	https://www.pkwytavern.com/flamingo-and-215
 Rockhouse	Sun-Thur: 11a-10p, Fri-Sat: 11a-12a	https://www.therockhousebar.com
-Seafood Shack and Mojito Bar	(Restaurant) Sun, Wed, Thur: 4p-10p, Fri-Sat: 4p-11p;  (mojito bar) Wed-Sun: 4p-11p	https://treasureisland.com/restaurant/4/seafood-shack
-Senor Frogs	(Restaurant) Mon-Wed: 5p-10p, Sun & Thur: 11a-10p, Fri-Sat: 11a-8p;  (Nightclub) Mon-Wed: 9p-12a, Sun & Thur: 9p-4a, Fri-Sat:9p-5a	https://senorfrogs.com/las-vegas
+Seafood Shack and Mojito Bar	(Restaurant) Sun& Wed-Thur: 4p-10p, (Restaurant) Fri-Sat: 4p-11p, (mojito bar) Wed-Sun: 4p-11p	https://treasureisland.com/restaurant/4/seafood-shack
+Senor Frogs	(Restaurant) Mon-Wed: 5p-10p, (Restaurant_ Sun & Thur: 11a-10p, (Restaurant) Fri-Sat: 11a-8p, (Nightclub) Mon-Wed: 9p-12a, (Nightclub) Sun & Thur: 9p-4a, (Nightclub) Fri-Sat: 9p-5a	https://senorfrogs.com/las-vegas
 Tao	Sun-Wed: 5:30p-10:30p, Thur-Sat: 5p-11:30p	https://taogroup.com/venues/tao-asian-bistro-las-vegas/
 The Steakhouse	Sun-Fri: 4p-10p, Sat: 4p-11p	https://www.circuscircus.com/restaurants-1/the-steak-house/
 The Still	Mon-Wed: 4p-10p, Thurs: 12p-10p, Fri: 12p-1a, Sat: 11a-1a, Sun: 10a-10p	https://thestillvegas.com
