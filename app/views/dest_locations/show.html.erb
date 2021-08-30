@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Destination:</strong>
+  <%= @dest_location.destination_id %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @dest_location.location_id %>
+</p>
+
+<%= link_to 'Edit', edit_dest_location_path(@dest_location) %> |
+<%= link_to 'Back', dest_locations_path %>

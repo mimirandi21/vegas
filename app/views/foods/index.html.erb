@@ -15,17 +15,17 @@
   <tbody>
     <% @foods.each do |food| %>
       <tr>
-        <td><%= food.name %></td>
+        <td><%= link_to food.name, food %></td>
         <td><%= food.hours %></td>
-        <td><%= food.website %></td>
-        <td><%= link_to 'Show', food %></td>
-        <td><%= link_to 'Edit', edit_food_path(food) %></td>
-        <td><%= link_to 'Destroy', food, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><a href='<%= food.website %>'><%= food.website %></td>
+        
+        
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
+<br/>
 
 <%= link_to 'New Food', new_food_path %>

@@ -1,0 +1,27 @@
+<%= form_with(model: trans_location) do |form| %>
+  <% if trans_location.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(trans_location.errors.count, "error") %> prohibited this trans_location from being saved:</h2>
+
+      <ul>
+        <% trans_location.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :transportation_id %>
+    <%= form.text_field :transportation_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location_id %>
+    <%= form.text_field :location_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

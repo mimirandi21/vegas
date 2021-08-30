@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Destination:</strong>
+  <%= @dest_like.destination_id %>
+</p>
+
+<p>
+  <strong>Like:</strong>
+  <%= @dest_like.like_id %>
+</p>
+
+<%= link_to 'Edit', edit_dest_like_path(@dest_like) %> |
+<%= link_to 'Back', dest_likes_path %>

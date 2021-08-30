@@ -1,0 +1,2 @@
+module DestLocationsHelper
+end

@@ -1,0 +1,27 @@
+<%= form_with(model: trans_note) do |form| %>
+  <% if trans_note.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(trans_note.errors.count, "error") %> prohibited this trans_note from being saved:</h2>
+
+      <ul>
+        <% trans_note.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :transportation_id %>
+    <%= form.text_field :transportation_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :note_id %>
+    <%= form.text_field :note_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Destination:</strong>
+  <%= @dest_special.destination_id %>
+</p>
+
+<p>
+  <strong>Special:</strong>
+  <%= @dest_special.special_id %>
+</p>
+
+<%= link_to 'Edit', edit_dest_special_path(@dest_special) %> |
+<%= link_to 'Back', dest_specials_path %>

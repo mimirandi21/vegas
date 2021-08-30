@@ -1,0 +1,2 @@
+module TransCategoriesHelper
+end

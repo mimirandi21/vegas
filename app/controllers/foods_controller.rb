@@ -8,13 +8,43 @@ class FoodsController < ApplicationController
 
   # GET /foods/1 or /foods/1.json
   def show
-    @foodspecials = []
-    @foodspecials << FoodSpecial.find_by(food_id: params[:id])
     
-    if @foodspecials != [nil]
+    @foodspecials = FoodSpecial.where(food_id: params[:id]).to_a
+    
+    if @foodspecials != []
       @specials = []
       @foodspecials.each do |s|
-        @specials << Special.find_by(id: s[:special_id])
+        @specials.push(Special.find_by(:id => s[:special_id]))
+      end
+    end
+
+    
+    @foodnotes = FoodNote.where(food_id: params[:id]).to_a
+    
+    if @foodnotes != []
+      @notes = []
+      @foodnotes.each do |n|
+        @notes.push(Note.find_by(:id => n[:note_id]))
+      end
+    end
+
+    
+    @foodrecs = FoodRecommendation.where(:food_id => params[:id]).to_a
+    
+    if @foodrecs != []
+      @recs = []
+      @foodrecs.each do |r|
+        @recs.push(Recommendation.find_by(:id => r[:recommendation_id]))
+      end
+    end
+
+
+    @foodlikes = FoodLike.where(food_id: params[:id]).to_a
+    
+    if @foodlikes != []
+      @likes = []
+      @foodlikes.each do |l|
+        @likes.push(Like.find_by(:id => l[:like_id]))
       end
     end
   end

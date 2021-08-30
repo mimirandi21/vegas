@@ -1,34 +1,67 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong><br/>
+<h2>
+  
   <%= @food.name %>
-</p>
+</h2>
 
 <p>
   <strong>Hours:</strong>
   <br/>
+  <ul>
   <%@food.hours.split(/[,]/).each do |hour|%>
-    <%= hour %><br/>
+    <li><%= hour %></li><br/>
   <%end%>
+  </ul>
 </p>
+
+<% if @notes %>
+<p>
+  <strong>Notes:</strong><br/>
+  <ul>
+    <%@notes.each do |note|%>
+      <% note.info.split(/[;]/).each do |n| %>
+        <li><%= n %></li><br/>
+      <% end %>
+    <%end%>
+    </ul>
+</p>
+<%end%>
 
 <% if @specials %>
 <p>
   <strong>Specials:</strong><br/>
-  
+  <ul>
     <%@specials.each do |special|%>
       <% special.info.split(/[;]/).each do |s| %>
-        <%= s %><br/>
+        <li><%= s %></li><br/>
       <% end %>
     <%end%>
+    </ul>
+</p>
+<%end%>
+
+<% if @recs %>
+
+<p>
+  <strong>Recommendations:</strong><br/>
+  <ul>
+    <%@recs.each do |rec|%>
+      <% rec.info.split(/[;]/).each do |r| %>
+        <li><%= r %></li><br/>
+      <% end %>
+    <%end%>
+    </ul>
 </p>
 <%end%>
 
 <p>
   <strong>Website:</strong><br/>
-  <%= @food.website %>
+  <a href='<%= @food.website %>'><%= @food.website %>
 </p>
+<br/>
 
-<%= link_to 'Edit', edit_food_path(@food) %> |
+<%# <%= link_to 'Edit', edit_food_path(@food) %> 
 <%= link_to 'Back', foods_path %>
+
+

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Trans Locations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Transportation</th>
+      <th>Location</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trans_locations.each do |trans_location| %>
+      <tr>
+        <td><%= trans_location.transportation_id %></td>
+        <td><%= trans_location.location_id %></td>
+        <td><%= link_to 'Show', trans_location %></td>
+        <td><%= link_to 'Edit', edit_trans_location_path(trans_location) %></td>
+        <td><%= link_to 'Destroy', trans_location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trans Location', new_trans_location_path %>

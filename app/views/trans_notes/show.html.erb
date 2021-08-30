@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Transportation:</strong>
+  <%= @trans_note.transportation_id %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @trans_note.note_id %>
+</p>
+
+<%= link_to 'Edit', edit_trans_note_path(@trans_note) %> |
+<%= link_to 'Back', trans_notes_path %>

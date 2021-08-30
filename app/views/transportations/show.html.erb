@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<h2>
+  
+  <%= @transportation.name %>
+</h2>
+
+<p>
+  <strong>Hours:</strong>
+  <br/>
+  <ul>
+  <%@transportation.hours.split(/[,]/).each do |hour|%>
+    <li><%= hour %></li><br/>
+  <%end%>
+  </ul>
+</p>
+
+<% if @notes %>
+<p>
+  <strong>Notes:</strong><br/>
+  <ul>
+    <%@notes.each do |note|%>
+      <% note.info.split(/[;]/).each do |n| %>
+        <li><%= n %></li><br/>
+      <% end %>
+    <%end%>
+    </ul>
+</p>
+<%end%>
+
+<% if @specials %>
+<p>
+  <strong>Specials:</strong><br/>
+  <ul>
+    <%@specials.each do |special|%>
+      <% special.info.split(/[;]/).each do |s| %>
+        <li><%= s %></li><br/>
+      <% end %>
+    <%end%>
+    </ul>
+</p>
+<%end%>
+
+<% if @recs %>
+<p>
+  <strong>Recommendations:</strong><br/>
+  <ul>
+    <%@recs.each do |rec|%>
+      <% rec.info.split(/[;]/).each do |r| %>
+        <li><%= r %></li><br/>
+      <% end %>
+    <%end%>
+    </ul>
+</p>
+<%end%>
+
+<p>
+  <strong>Website:</strong><br/>
+  <a href='<%= @transportation.website %>'><%= @transportation.website %>
+</p>
+
+<br/>
+<%# <%= link_to 'Edit', edit_transportation_path(@transportation) %> 
+<%= link_to 'Back', transportations_path %>

@@ -1,0 +1,2 @@
+module TransNotesHelper
+end

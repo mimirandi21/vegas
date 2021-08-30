@@ -12,4 +12,6 @@ class Food < ApplicationRecord
     has_many :recommendations, through: :food_recommendations
     has_many :specials, through: :food_specials
     has_many :likes, through: :food_likes
+
+    validates :name, presence: true, uniqueness: true
 end
