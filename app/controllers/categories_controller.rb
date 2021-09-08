@@ -3,11 +3,41 @@ class CategoriesController < ApplicationController
 
   # GET /categories or /categories.json
   def index
-    @categories = Category.all
+    @categories = Category.all.sort { |a, b| a[:category] <=> b[:category] }
   end
 
   # GET /categories/1 or /categories/1.json
   def show
+    @foodcats = FoodCategory.where(category_id: params[:id]).to_a
+    
+    if @foodcats != []
+      @foods = []
+      @foodcats.each do |f|
+        @foods.push(Food.find_by(:id => f[:food_id]))
+      end
+      @foods = @foods.sort_by { |item| item.name }
+    end
+
+    @destcats = DestCategory.where(category_id: params[:id]).to_a
+    
+    if @destcats != []
+      @dests = []
+      @destcats.each do |d|
+        @dests.push(Destination.find_by(:id => d[:destination_id]))
+      end
+      @dests = @dests.sort_by { |item| item.name }
+    end
+
+    @loccats = TransCategory.where(category_id: params[:id]).to_a
+    
+    if @loccats != []
+      @locs = []
+      @loccats.each do |l|
+        @locs.push(Transportation.find_by(:id => l[:transportation_id]))
+      end
+      @locs = @locs.sort_by { |item| item.name }
+    end
+
   end
 
   # GET /categories/new

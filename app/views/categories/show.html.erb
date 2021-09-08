@@ -1,9 +1,37 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Category:</strong>
-  <%= @category.category %>
+  <h3><strong><%= @category.category %></strong></h3>
+  <%if @foods %>
+  </br>
+  <b><em>Foods:</em></b>
+  <ul>
+      <% @foods.each do |food| %>
+        <li><%= link_to food.name, food_path(food.id) %></li></br>
+      <% end %>
+  </ul>
+  <% end %>
+
+<% if @dests %>
+  </br>
+  <b><em>Destinations:</em></b>
+  <ul>
+      <% @dests.each do |dest| %>
+        <li><%= link_to dest.name, destination_path(dest.id) %></li></br>
+      <% end %>
+  </ul>
+  <% end %>
+
+<% if @locs %>
+  </br>
+  <b><em>Transportation:</em></b>
+  <ul>
+      <% @locs.each do |loc| %>
+        <li><%= link_to loc.name, transportation_path(loc.id) %></li></br>
+      <% end %>
+  </ul>
+  <% end %>
 </p>
 
-<%= link_to 'Edit', edit_category_path(@category) %> |
+
 <%= link_to 'Back', categories_path %>

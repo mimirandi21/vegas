@@ -8,6 +8,17 @@ class DestinationsController < ApplicationController
 
   # GET /destinations/1 or /destinations/1.json
   def show
+    @destlocs = []
+
+    @destlocs.push(DestLocation.find_by(:destination_id => params[:id]))
+    if @destlocs != []
+
+      @locs = []
+      @destlocs.each do |loc|
+        
+        @locs.push(Location.find_by(:id => loc[:location_id]))
+      end
+    end
     
     @destspecials = DestSpecial.where(destination_id: params[:id]).to_a
     

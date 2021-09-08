@@ -3,7 +3,7 @@ class TransportationsController < ApplicationController
 
   # GET /transportations or /transportations.json
   def index
-    @transportations = Transportation.all
+    @transportations = Transportation.all.sort { |a, b| a[:name] <=> b[:name] }
   end
 
   # GET /transportations/1 or /transportations/1.json
