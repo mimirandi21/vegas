@@ -39,12 +39,12 @@ class FoodsController < ApplicationController
     end
 
 
-    @foodlikes = FoodLike.where(food_id: params[:id]).to_a
+    @foodlocs = FoodLocation.where(food_id: params[:id]).to_a
     
-    if @foodlikes != []
-      @likes = []
-      @foodlikes.each do |l|
-        @likes.push(Like.find_by(:id => l[:like_id]))
+    if @foodlocs != []
+      @locs = []
+      @foodlocs.each do |l|
+        @locs.push(Location.find_by(:id => l[:location_id]))
       end
     end
   end

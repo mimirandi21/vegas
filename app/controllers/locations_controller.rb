@@ -3,11 +3,40 @@ class LocationsController < ApplicationController
 
   # GET /locations or /locations.json
   def index
-    @locations = Location.all.sort { |a, b| a[:name] <=> b[:name] }
+    @locations = Location.all.sort { |a, b| a[:location] <=> b[:location] }
   end
 
   # GET /locations/1 or /locations/1.json
   def show
+    @foodlocs = FoodLocation.where(location_id: params[:id]).to_a
+    
+    if @foodlocs != []
+      @foods = []
+      @foodlocs.each do |f|
+        @foods.push(Food.find_by(:id => f[:food_id]))
+      end
+      @foods = @foods.sort_by { |item| item.name }
+    end
+
+    @destlocs = DestLocation.where(location_id: params[:id]).to_a
+    
+    if @destlocs != []
+      @dests = []
+      @destlocs.each do |d|
+        @dests.push(Destination.find_by(:id => d[:destination_id]))
+      end
+      @dests = @dests.sort_by { |item| item.name }
+    end
+
+    @loclocs = TransLocation.where(location_id: params[:id]).to_a
+    
+    if @loclocs != []
+      @locs = []
+      @loclocs.each do |l|
+        @locs.push(Transportation.find_by(:id => l[:transportation_id]))
+      end
+      @locs = @locs.sort_by { |item| item.name }
+    end
   end
 
   # GET /locations/new

@@ -4,7 +4,10 @@
   
   <%= @food.name %>
 </h2>
-
+<% @locs.each do |loc| %>
+  <h4>@ <%= loc.location %></h4>
+<% end %>
+</br>
 <p>
   <strong>Hours:</strong>
   <br/>
@@ -62,8 +65,11 @@
 <br/>
 
 <%# <%= link_to 'Edit', edit_food_path(@food) %> 
-<%= link_to 'Food', foods_path %>
-<br/>
-<%= link_to 'Categories', categories_path %>
 
+<%= link_to "Food", foods_path %>
+<%= link_to "Destinations", destinations_path %>
+<%= link_to "Transportation", transportations_path%>
+</br>
+<%= link_to "Categories", categories_path %>
+<%= link_to "Locations", locations_path %>
 

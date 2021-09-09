@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
   resources :transportations
-
+  resources :locations
   resources :destinations
- 
-
   resources :categories
   resources :foods
 
